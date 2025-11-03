@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 14.5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  z-index: 1000;
+  gap: 7rem;
+}
+
+.header .logo{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.header.home.scrolled .logo img{
+  height: 40px;
+  width: 40px;
+  display: block;
+  object-fit: contain;
+  transition: display 0.9s ease;
+}
+
+.header.home .logo img{
+  display: none;
+}
+
+/* Transparent by default */
+.header.home {
+  background: transparent;
+  color: white;
+}
+
+/* When scrolled, add solid background */
+.header.home.scrolled {
+  background:#2c2f48;
+  color: white;
+}
+
+/* Hide when scrolling up */
+.header.hide {
+  transform: translateY(-100%);
+}
+
+
+/* Navigation */
+nav a {
+  color: inherit;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 1em;
+
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.name{
+  width: 30%;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
