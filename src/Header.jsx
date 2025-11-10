@@ -10,11 +10,8 @@ export default function Header({ page = "home" }) {
     const handleScroll = () => {
       const current = window.scrollY;
 
-      // Hide when scrolling down, show when scrolling up
       if (current < lastScroll && current > 100) setHidden(true);
       else setHidden(false);
-
-      // Detect if user scrolled from top to change background
       if (current > 150) setScrolled(true);
       else setScrolled(false);
 
@@ -33,7 +30,7 @@ export default function Header({ page = "home" }) {
     >
       <div className="logo">
       <img src="/src/assets/logo-vyws.png" alt="" />
-      <h1 className="name">MACCCR</h1>
+     Mahila Arts Commerce College, Chandur Railway
       </div>
 
       <nav>
@@ -42,10 +39,10 @@ export default function Header({ page = "home" }) {
        <a href=""> Administration</a>
        <a href=""> Academics</a>
        <a href=""> IQAC/NAAC</a>
-       <a href=""> Students Corner</a>
-       <a href=""> Facilities</a>
-       <a href=""> Photo Gallery</a>
-       <a href=""> Contact Us</a>
+       <a href=""> Students</a>
+       {/* <a href=""> Facilities</a> */}
+       {/* <a href=""> Photo Gallery</a> */}
+       <a href=""> Contact</a>
       </nav>
     </header>
   );

@@ -39,13 +39,25 @@ const items = [
 
   return (
     <>
-    <div className="first">
+    <div  className="first">
+      <img src="/src/assets/building.png" className="bgimg"></img>
+      <img className="cover" src="/src/assets/bgc2.png" alt="" />
       <div className="content">
         <img className="vywsLogo" src="/src/assets/logo-vyws.png" alt="Vyws Logo" />
         <h3>Vidarbha Youth Welfare Society</h3>
         <h1>Mahila Arts Commerce College, Chandur Railway</h1>
         <h3>Beside Shahid Hutama Smarak, Main Road, Chandur Railway - Amravati (M.S.) 444904</h3>
         <h3 className="highlight">To empower girls and women’s in rural specific with knowledge and confidence to define the future of India through qualitative and enriching women education.</h3>
+        <div className="university">
+          <div className="sgbau">
+            <img  src="/src/assets/SGBAU.png" alt=""  />
+          </div>
+          <h3>Affiliated with </h3> 
+          <h1>Sant Gadge Baba Amravati University</h1>
+          <h3>Formerly known as Amravati University <br />
+          Accredited by NAAC with "B++" Grade</h3>
+
+        </div>
       </div>
     </div>
 

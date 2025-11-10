@@ -9,28 +9,29 @@
   font-weight: 600;
   transition: all 0.4s ease;
   z-index: 1000;
-  gap: 7rem;
+  /* gap: 7rem; */
 }
 
 .header .logo{
-  width: 30%;
+  width: 60%;
   display: flex;
+  font-size:2rem ;
   align-items: center;
   justify-content: start;
   gap: 1rem;
-}
-
-.header.home.scrolled .logo img{
-  height: 40px;
-  width: 40px;
-  display: block;
-  object-fit: contain;
-  transition: display 0.9s ease;
+  /* background-color: pink; */
 }
 
 .header.home .logo img{
-  display: none;
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin: 0;
+  object-fit: contain;
+  transition: display 1s ease-in-out;
 }
+
+
 
 /* Transparent by default */
 .header.home {
@@ -42,6 +43,19 @@
 .header.home.scrolled {
   background:#2c2f48;
   color: white;
+
+}
+
+.header.home.scrolled .logo{
+  width: 45%;
+  font-size: 1.5rem;
+  transition: all 1s ease;
+}
+
+.header.home.scrolled .logo img{
+  height: 40px;
+  width: 40px;
+  transition: all 1s ease;
 }
 
 /* Hide when scrolling up */
@@ -49,23 +63,36 @@
   transform: translateY(-100%);
 }
 
+nav{
+  width: 40%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
 
-/* Navigation */
-nav a {
-  color: inherit;
-  margin-left: 25px;
+.header.home.scrolled nav{
+  width: 55%;
+}
+
+
+
+.header.home nav a {
+  width: fit-content;
+  color: #2c2f48;
   text-decoration: none;
   font-size: 1em;
+  
+}
 
+.header.home.scrolled nav a{
+  color:#f0f8ff;
+  text-decoration: none;
   transition: color 0.3s;
+  width: fit-content;
 }
 
 nav a:hover {
   color: #ffd700;
-}
-
-.name{
-  width: 30%;
-  font-size: 2rem;
-  letter-spacing: 0.5px;
 }
