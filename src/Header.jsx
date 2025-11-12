@@ -63,11 +63,10 @@ export default function Header({ page = "home" }) {
         {/* Dropdown for Administration */}
           <a className="linkhover" href="#">Administration▾
           <div className="dropdown-content">
-            <a href="">Management Body</a>
+            <a href="/management">Management Body</a>
             <a href="/src/assets/PDF's/College-Development-Committee.pdf" target="_blank">College Development Committee (CDC)</a>
-            <a href="" >Principal’s Message</a>
-            <a href="">Chairman’s Message</a>
-            <a href="">Code of Professional Ethics</a>
+            <a href="/principal" >Principal’s Message</a>
+            <a href="/code">Code of Professional Ethics</a>
             <a href="/src/assets/PDF's/PO-PSO-CSO.pdf" target="_blank">PO, PSO, CO</a>
             <a href="/src/assets/PDF's/Welfare-Schemes.pdf" target="_blank">Welfare Scheme</a>
 

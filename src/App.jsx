@@ -9,6 +9,8 @@ import Vision from "./Vision";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Core from "./Corevalues";
 import Goals from "./Goals";
+import Management from "./Management";
+import PrincipalMsg from "./PrincipalMsg";
 
 
 const Layout = () => {
@@ -24,6 +26,9 @@ const Layout = () => {
         <Route path="/vision" element={<Vision/>} />
         <Route path="/goals" element={<Goals/>} />
         <Route path="/core" element={<Core/>} />
+        <Route path="/management" element={<Management/>} />
+        <Route path="/Principal" element={<PrincipalMsg/>} />
+        
       </Routes>
       <Footer />
     </>
