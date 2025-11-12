@@ -42,10 +42,11 @@ export default function Header({ page = "home" }) {
             <a href="#">Vision & Mission</a>
             <a href="#">Goals & Objectives</a>
             <a href="#">Core values</a>
-            <a href="#">Procedure and Policies</a>
-            <a href="#">Handbook & Human values</a>
-            <a href="#">Green book for college</a>
-            <a href="#">College handbook</a>
+            <a href="/src/assets/PDF's/salient_features.pdf" target="_blank">Salient features</a>
+            <a href="/src/assets/PDF's/procedures.pdf" target="_blank">Procedure and Policies</a>
+            <a href="/src/assets/PDF's/handbook.pdf" target="_blank">Handbook & Human values</a>
+            <a href="/src/assets/PDF's/Green-Book.pdf" target="_blank">Green book for college</a>
+            <a href="/src/assets/PDF's/College-Handbook.pdf" target="_blank">College handbook</a>
             {/* Optional Nested dropdown */}
             <div className="sub-dropdown">
               <a href="#">Facilities▸</a>
@@ -62,21 +63,21 @@ export default function Header({ page = "home" }) {
         {/* Dropdown for Administration */}
           <a className="linkhover" href="#">Administration▾
           <div className="dropdown-content">
-            <a href="#">Management Body</a>
-            <a href="#">College Development Committee (CDC)</a>
-            <a href="#">Principal’s Message</a>
-            <a href="#">Chairman’s Message</a>
-            <a href="#">Code of Professional Ethics</a>
-            <a href="#">PO, PSO, CO</a>
-            <a href="#">Welfare Scheme</a>
+            <a href="">Management Body</a>
+            <a href="/src/assets/PDF's/College-Development-Committee.pdf" target="_blank">College Development Committee (CDC)</a>
+            <a href="" >Principal’s Message</a>
+            <a href="">Chairman’s Message</a>
+            <a href="">Code of Professional Ethics</a>
+            <a href="/src/assets/PDF's/PO-PSO-CSO.pdf" target="_blank">PO, PSO, CO</a>
+            <a href="/src/assets/PDF's/Welfare-Schemes.pdf" target="_blank">Welfare Scheme</a>
 
             {/* Optional Nested dropdown */}
             <div className="sub-dropdown">
-              <a href="#">Code of Conduct ▸</a>
+              <a>Code of Conduct ▸</a>
               <div className="sub-dropdown-content">
-                <a href="#">For Students</a>
-                <a href="#">For Teachers</a>
-                <a href="#">For Non-Teaching Staff</a>
+                <a href="src\assets\PDF's\for-Student.pdf" target="_blank">For Students</a>
+                <a href="src\assets\PDF's\Teaching-Staff.pdf" target="_blank">For Teachers</a>
+                <a href="src\assets\PDF's\for-non-teaching-Staff.pdf" target="_blank">For Non-Teaching Staff</a>
               </div>
             </div>
           </div>
