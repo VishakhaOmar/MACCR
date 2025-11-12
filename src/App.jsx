@@ -23,7 +23,7 @@ const Layout = () => {
         <Route path="/about" element={<About />} />
         <Route path="/vision" element={<Vision/>} />
         <Route path="/goals" element={<Goals/>} />
-        <Route path="/core" element={<Core-values/>} />
+        <Route path="/core" element={<Core/>} />
       </Routes>
       <Footer />
     </>

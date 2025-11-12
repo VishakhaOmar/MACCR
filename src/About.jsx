@@ -7,7 +7,7 @@ export default function About(){
 
   return(
     <section>
-      <div className="about-content">
+      <div className="common-page">
         <h2>About Us</h2>
           <p>Mahila Arts Commerce College was established on 27/08/1991, by Vidarbha Youth Welfare Society of Amravati. The foundation stone of the College of Mahila Arts Commerce College was led by Late Honorable Shri. Ram Meghe, the Ex-Education Minister of Maharashtra. At present, Dr. Nitin R. Dhande is the Hon’ble Chairman of the Vidarbha Youth Welfare Society, Amravati.
           <br /><br />
