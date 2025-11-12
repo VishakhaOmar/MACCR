@@ -117,7 +117,6 @@ nav .linkhover {
   padding: 8px 0;
 }
 
-/* Items */
 .dropdown-content p{
   color: #fd6202;
   margin: 10px;
@@ -165,7 +164,7 @@ nav .linkhover:hover .dropdown-content {
   display: none;
   width: 90%;
   position: absolute;
-  top: 0%;
+  top: -150%;
   left: 100%;
   color: #2c2f48;
   background: white;
