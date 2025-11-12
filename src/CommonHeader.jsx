@@ -12,14 +12,14 @@ return(
       </div>
 
       <nav>
-        <a href="#">Home</a>
+        <a href="/">Home</a>
 
-        <a className="linkhover" href="#">About▾
+        <a className="linkhover" href="">About▾
           <div className="dropdown-content">
-            <a href="#">About college</a>
-            <a href="#">Vision & Mission</a>
-            <a href="#">Goals & Objectives</a>
-            <a href="#">Core values</a>
+            <a href="/about">About college</a>
+            <a href="/vision">Vision & Mission</a>
+            <a href="/goals">Goals & Objectives</a>
+            <a href="/core">Core values</a>
             <a href="/src/assets/PDF's/salient_features.pdf" target="_blank">Salient features</a>
             <a href="/src/assets/PDF's/procedures.pdf" target="_blank">Procedure and Policies</a>
             <a href="/src/assets/PDF's/handbook.pdf" target="_blank">Handbook & Human values</a>
