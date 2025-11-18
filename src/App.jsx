@@ -19,7 +19,7 @@ const Layout = () => {
 
   return (
     <>
-      {isHomePage ? <Header /> : <CommonHeader />}
+      <CommonHeader />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

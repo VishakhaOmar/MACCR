@@ -8,9 +8,11 @@ return(
      <div className="commonheader">
         <div className="logo">
         <img src="/src/assets/logo-vyws.png" alt="College Logo" />
-        Mahila Arts Commerce College, Chandur Railway
       </div>
 
+      <div className="headermiddle">
+      <h2>Mahila Arts Commerce College, Chandur Railway (MACCCR)</h2>
+      
       <nav>
         <a href="/">Home</a>
 
@@ -116,7 +118,20 @@ return(
           
         <a href="#">Contact</a>
          </nav>
-     </div>
+         </div>
+    
+        <div className="university">
+          <div className="sgbau">
+            <img  src="/src/assets/SGBAU.png" alt=""  />
+          </div>
+          {/* <h3>Affiliated with </h3> 
+          <h1>Sant Gadge Baba Amravati University</h1>
+          <h3>Formerly known as Amravati University <br />
+          Accredited by NAAC with "B++" Grade</h3> */}
+
+        </div> 
+      </div>
+
     
 )
 }

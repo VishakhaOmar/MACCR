@@ -9,23 +9,28 @@
 
 .bgimg{
   height: 100%;
-  width: 60%;
+  width: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: center;
   margin: 0;
   position: relative;
+  z-index: -1;
 }
 
-.bgimg::before{
-  content:"";
-  position:absolute ;
-  top: 0%;
-  left: 0%;
-  height: 100%;
+.first::before{
+ content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: #2f6aaabf;
-  z-index: 1;
+  height: 100%;
+  background: url('/src/assets/front.png') no-repeat center center ;
+  background-size: cover;
+  background-position: top;
+  opacity: 1;
+  z-index: -1; 
 }
+
 
 .cover{
   position: absolute;
@@ -37,13 +42,11 @@
   margin: 0;
 }
 
-.content{
-  /* height:60%;*/
+/* .content{
   width: 40%; 
   position: absolute;
   top: 15%;
   right: 2%;
-  /* background: #000; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,14 +90,16 @@
   height:4em;
   font-weight: 600;
   font-family: sans-serif;
-}
+}*/
 
-.first .content .university{
+/* .first .university{
   margin-top: 4rem;
   width: 80%;
   height:28vh ;
   display: flex;
-  position: relative;
+  position: absolute;
+  top:20%;
+  left: 20%;
   flex-direction: column;
   justify-content: end;
   align-items: center;
@@ -103,22 +108,19 @@
   padding-bottom: 1rem;
 }
 
-.first .content .university .sgbau img{
+.first .university .sgbau img{
   width: 100px;
   height: auto;
   margin: 0;
-  /* aspect-ratio: unset; */
 }
 
-.first .content .university .sgbau{
+.first .university .sgbau{
   background-color: #F2F9Ff;
   padding-inline: 2rem;
-  position: absolute;
   height: auto;
   width: auto;
   border-radius: 50%;
-  top: -25%;
-}
+}  */
 
 .second{
   width: 100%;
