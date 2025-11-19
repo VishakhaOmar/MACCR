@@ -5,14 +5,27 @@ import "./CommonHeader.css";
 export default function CommonHeader(){
 
 return(
+  <>
      <div className="commonheader">
+        <div className="upper">
         <div className="logo">
         <img src="/src/assets/logo-vyws.png" alt="College Logo" />
+        <h2>Mahila Arts Commerce College, Chandur Railway (MACCCR)</h2>
       </div>
+         <div className="university">
+          <div className="sgbau">
+            <img  src="/src/assets/SGBAU.png" alt=""  />
+          </div>
+          <h3>Affiliated with </h3> 
+          <h1>Sant Gadge Baba Amravati University</h1>
+          <h3>Formerly known as Amravati University <br />
+          Accredited by NAAC with "B++" Grade</h3>
 
-      <div className="headermiddle">
-      <h2>Mahila Arts Commerce College, Chandur Railway (MACCCR)</h2>
-      
+        </div> 
+    </div>
+  </div>
+  
+      <div className="navlower">
       <nav>
         <a href="/">Home</a>
 
@@ -120,17 +133,8 @@ return(
          </nav>
          </div>
     
-        <div className="university">
-          <div className="sgbau">
-            <img  src="/src/assets/SGBAU.png" alt=""  />
-          </div>
-          {/* <h3>Affiliated with </h3> 
-          <h1>Sant Gadge Baba Amravati University</h1>
-          <h3>Formerly known as Amravati University <br />
-          Accredited by NAAC with "B++" Grade</h3> */}
-
-        </div> 
-      </div>
+       
+      </>
 
     
 )
