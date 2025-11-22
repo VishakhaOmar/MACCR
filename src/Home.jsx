@@ -43,22 +43,21 @@ const items = [
     <div  className="first">
        </div>
 
-    <div className="second">
+    {/* <div className="second">
       <div className="course">UG Courses</div>
       <div className="course">PG Courses</div>
       <div className="course">PhD Courses</div>
-    </div>
+    </div> */}
 
     <div className="third">
-      <div className="ruler"></div>
+      {/* <div className="ruler"></div> */}
       <div className="about">
-        <h2>About Us</h2>
+        <h2>∽ About Us ∼</h2>
         <div className="container">
         <p>Mahila Arts Commerce College was established on 27/08/1991, by Vidarbha Youth Welfare Society of Amravati. The foundation stone of the College of Mahila Arts Commerce College was led by Late Honorable Shri. Ram Meghe, the Ex-Education Minister of Maharashtra. At present, Dr. Nitin R. Dhande is the Hon’ble Chairman of the Vidarbha Youth Welfare Society, Amravati.
         <br /><br />
         Mahila Arts Commerce College is affiliated to SGB, Amravati University Amravati; it provides instructions to the students for three years B.A. Degree Course, M.A. Degree course and PhD in two subjects. The college has implemented the education schemes of National Education Policy-2020 as per the instructions given by the parent University. The college has a team of duly qualified members of the academic community as its faculty. This has considerably helped in providing quality education. The college has been reaccredited (second cycle) in 2018 with “B” grade by NAAC, Bangalore.
-        <br /><br />
-        The college has the facilities of well set library, laboratories required for the subjects, a playing ground and a seminar hall for curricular and extracurricular activities. The college has NSS unit of 150 students. The students participate in all activities of NSS, Student Development, Sports as well as co-curricular and extra-curricular activities.</p>
+        <br /></p>
 
           <img src="/src/assets/colg.jpg" alt="College Building" />
         </div>
@@ -109,10 +108,11 @@ const items = [
       </div>
     </div>
 
+
     <div className="fifth">
       <div className="container">
       <div className="left">
-      <h2>Notice</h2>
+      <h2>Admission</h2>
      <div className="notice-scroll">
         <div className="notice-list">
           {items.map((item, index) => (
@@ -133,7 +133,25 @@ const items = [
       </div>
       <div className="ruler2"></div>
       <div className="right">
-        <h2>Chairman's Message</h2>
+          <h2>Notice</h2>
+     <div className="notice-scroll">
+        <div className="notice-list">
+          {items.map((item, index) => (
+            <div key={index} className="notice-card">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
+          {/* Duplicate list for infinite loop */}
+          {items.map((item, index) => (
+            <div key={`dup-${index}`} className="notice-card">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
+        </div>
+        {/* <h2>Chairman's Message</h2>
         <div className="message">
           <p>It gives me immense pleasure to welcome you to Mahila Arts & Commerce College, Chandur Railway — an institution built on the vision of empowering women through quality education and holistic development.
 
@@ -145,20 +163,78 @@ const items = [
         <br />
         <br />
         — Chairman
-      <i>Mahila Arts & Commerce College, Chandur Railway</i>
+      <i>Mahila Arts & Commerce College, Chandur Railway</i> */}
       </div>
       </div>
     </div>
 
     <div className="sixth">
-      <div className="container">
-      <div className="gallery-grid">
+        <h2>∽ Academics ∼</h2>
+    <div className="container">
+      <div className="sixth-left">
+          <div className="bigimg">
+            <img src="/src/assets/collage/8.jpg" alt="" />
+          </div>
+          <div className="smallimgs">
+            <img className="one" src="/src/assets/collage/27.jpg" alt="" />
+            <img className="two" src= "/src/assets/collage/24.jpg" alt="" />
+          </div>
+        </div>
+        
+        <div className="sixth-right">
+          <p>Our academic programs focus on building strong fundamentals, practical understanding, and consistent discipline. With experienced faculty and a supportive learning environment, we guide students toward excellence in exams, higher studies, and future careers.</p>
+
+          <h3 className="courses">Under Graduate (B.A.) —→</h3>
+          <h3 className="courses">Post Graduate (P.G.) —→</h3>
+          <h3 className="courses">Ph.D Research center —→</h3>
+
+        </div>
+
+      {/*<div className="gallery-grid">
      {images.map((src, index) => (
   <img key={index} className={`gallery-item size-${(index % 4) + 1}`} src={src}/>
 
 ))}  
+        </div>*/}
+        </div> 
+    </div>
+
+    <div className="seven">
+      <div className="container">
+      <div className="seven-left">
+        <h2>∽ Management desk ∼</h2>
+        <div className="chairman">
+          <img src="/src/assets/president.jpeg" alt="" />
+          <div className="msg">
+            <h3>Chairman's Message: Dr. Nitin R. Dhande</h3>
+            <p>Mahila Arts commerce college  has a team of duly qualified members of the academic community as its faculty. This has considerably helped in providing quality education. The College is reaccredited by NACC, Bangalore in 2018.
+              <br />
+              <i style={{color:"red"}}>read more —→</i></p>
+          </div>
         </div>
+        <div className="principal">
+          <img src="\src\assets\TusharDeshmukh.jpeg" alt="" />
+          <div className="msg">
+            <h3>Principal's Message: Dr. Tushar Deshmukh</h3>
+            <p>It gives me immense pleasure to welcome you to Mahila Arts & Commerce College, Chandur Railway — an institution built on the vision of empowering women through quality education and holistic development.
+              <br />
+              <i style={{color:"#fd6202"}}>read more —→</i>
+            </p>
+
+          </div>
         </div>
+      </div>
+
+      <div className="seven-right">
+        <div className="box">300+ Students</div>
+        <div className="box">
+          50+ Staff
+        </div>
+        <div className="box">12 courses</div>
+        <div className="box">35 Years Completed</div>
+        
+      </div>
+      </div>
     </div>
 
     <div className="seventh">
