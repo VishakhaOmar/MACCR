@@ -183,11 +183,29 @@ const items = [
         
         <div className="sixth-right">
           <p>Our academic programs focus on building strong fundamentals, practical understanding, and consistent discipline. With experienced faculty and a supportive learning environment, we guide students toward excellence in exams, higher studies, and future careers.</p>
-
-          <h3 className="courses">Under Graduate (B.A.) —→</h3>
-          <h3 className="courses">Post Graduate (P.G.) —→</h3>
-          <h3 className="courses">Ph.D Research center —→</h3>
-
+          <div className="courses-Box">
+          <div className="courses">
+            <h4>Under Graduate (B.A.)</h4>
+            <p>English</p>
+            <p>Economics</p>
+            <p>Geography</p>
+            <p>Home Economics</p>
+            <p>Marathi</p>
+            <p>Sociology</p>
+            <p>Political Science</p>
+            <p>Marathi Literature</p>
+          </div>
+          <div className="courses">
+            <h4>Post Graduate (P.G.)</h4>
+              <p>Home Economics</p>
+              <p>Marathi</p>
+            </div>
+          <div className="courses">
+            <h4>Ph.D Research center</h4>
+                <p>English (Ph.D)</p>
+                <p>Marathi (Ph.D)</p>
+            </div>
+          </div>
         </div>
 
       {/*<div className="gallery-grid">
@@ -209,7 +227,7 @@ const items = [
             <h3>Chairman's Message: Dr. Nitin R. Dhande</h3>
             <p>Mahila Arts commerce college  has a team of duly qualified members of the academic community as its faculty. This has considerably helped in providing quality education. The College is reaccredited by NACC, Bangalore in 2018.
               <br />
-              <i style={{color:"red"}}>read more —→</i></p>
+              <i style={{color:"#2c2f48"}}>read more →</i></p>
           </div>
         </div>
         <div className="principal">
@@ -218,7 +236,7 @@ const items = [
             <h3>Principal's Message: Dr. Tushar Deshmukh</h3>
             <p>It gives me immense pleasure to welcome you to Mahila Arts & Commerce College, Chandur Railway — an institution built on the vision of empowering women through quality education and holistic development.
               <br />
-              <i style={{color:"#fd6202"}}>read more —→</i>
+              <i style={{color:"#2c2f48"}}>read more →</i>
             </p>
 
           </div>
